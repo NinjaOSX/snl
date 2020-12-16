@@ -8,8 +8,11 @@ read anything
 clear
 debug READY!
 
+apt-get update
+yum update
+
 #debug apt install apt-get -y
-apt install apt-get -y
+#apt install apt-get -y
 
 #debug apt-get install wget -y
 apt-get install wget -y
