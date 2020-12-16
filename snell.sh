@@ -22,7 +22,8 @@ rm -f snell.zip
 systemctl stop snell.service
 
 chmod +x snell-server
-./snell-server < $1
+yes=“y”
+./snell-server < $yes
 
 
 mv -f snell-server /usr/local/bin/
