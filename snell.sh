@@ -44,7 +44,7 @@ systemctl stop snell.service
 echo "y" > snell_new.config #写入y
 chmod +x snell-server
 ./snell-server < snell_new.config 
-rm -f snell_new.config 
+# rm -f snell_new.config 
 
 
 #debug chmod +x snell-server
