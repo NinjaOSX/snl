@@ -53,7 +53,7 @@ debug yes=“y”
 _yes=“y”
 
 debug "./snell-server < $yes"
-./snell-server $_yes
+./snell-server --wizard < ${_yes}
 
 debug mv -f snell-server /usr/local/bin/
 mv -f snell-server /usr/local/bin/
