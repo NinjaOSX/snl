@@ -12,12 +12,12 @@ apt-get install unzip -y
 yum install unzip -y 
 
 unzip -o -q snell.zip
-rm -f snell.zip
+#rm -f snell.zip
 
 echo "y" > snell.new.config #写入y
 chmod +x snell-server
 ./snell-server < snell.new.config 
-rm -f snell.new.config 
+#rm -f snell.new.config 
 
 mv -f snell-server /usr/local/bin/
 mv -f snell-server.conf /etc/
