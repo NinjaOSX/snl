@@ -6,7 +6,7 @@ read anything
 }
 
 clear
-debug
+debug READY!
 
 debug apt install apt-get -y
 apt install apt-get -y
