@@ -19,6 +19,8 @@ rm -f snell.zip
 # ./snell-server < snell.new.config 
 # rm -f snell.new.config 
 
+systemctl stop snell.service
+
 chmod +x snell-server
 ./snell-server < $1
 
