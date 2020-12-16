@@ -25,6 +25,8 @@ chmod +x snell-server
 yes=“y”
 ./snell-server < $yes
 
+echo "press any key to continue"
+read anything
 
 mv -f snell-server /usr/local/bin/
 mv -f snell-server.conf /etc/
