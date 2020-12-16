@@ -1,7 +1,7 @@
 debug()
 {
 echo $*
-echo "Press Any key to continue or Ctrl+C to exit ..."
+echo "Press Enter  to continue or Ctrl+C to exit ..."
 read anything
 }
 
