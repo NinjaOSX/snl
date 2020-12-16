@@ -1,6 +1,7 @@
 wget --no-check-certificate -O snell.zip https://github.com/surge-networks/snell/releases/download/v2.0.3/snell-server-v2.0.3-linux-amd64.zip
 # wget --no-check-certificate -O snell.service https://github.com/surge-networks/snell/raw/master/systemd-example
 wget --no-check-certificate -O snell.service https://raw.githubusercontent.com/NinjaOSX/snl/main/systemd-example
+apt-get install unzip -y
 yum install unzip -y 
 unzip -o -q snell.zip
 rm -f snell.zip
