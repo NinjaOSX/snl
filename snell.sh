@@ -1,66 +1,69 @@
 debug()
 {
-echo "Press any key to continue or Press ctrl+c to exit..."
+echo $*
+echo "Press Any key to continue or Ctrl+C to exit ..."
 read anything
 }
 
-debug
-
+debug apt install apt-get -y
 apt install apt-get -y
-debug
 
+debug apt-get install wget -y
 apt-get install wget -y
-debug
 
+debug yum install wget -y
 yum install wget -y
-debug
 
+dubug wget --no-check-certificate -O snell.zip https://github.com/surge-networks/snell/releases/download/v2.0.3/snell-server-v2.0.3-linux-amd64.zip
 wget --no-check-certificate -O snell.zip https://github.com/surge-networks/snell/releases/download/v2.0.3/snell-server-v2.0.3-linux-amd64.zip
-debug
 
+debug wget --no-check-certificate -O snell.service https://github.com/surge-networks/snell/raw/master/systemd-example
 wget --no-check-certificate -O snell.service https://github.com/surge-networks/snell/raw/master/systemd-example
-debug
+
 
 #wget --no-check-certificate -O snell.service https://raw.githubusercontent.com/NinjaOSX/snl/main/systemd-example
 
+debug apt-get install unzip -y
 apt-get install unzip -y
-debug
 
+debug yum install unzip -y 
 yum install unzip -y 
-debug
 
+debug unzip -o -q snell.zip
 unzip -o -q snell.zip
-debug
 
+debug rm -f snell.zip
 rm -f snell.zip
-debug
 
 # echo "y" > snell.new.config #写入y
 # chmod +x snell-server
 # ./snell-server < snell.new.config 
 # rm -f snell.new.config 
 
+debug systemctl stop snell.service
 systemctl stop snell.service
-debug
 
+debug chmod +x snell-server
 chmod +x snell-server
-debug
 
+debug yes=“y”
 yes=“y”
-debug
 
+debug ./snell-server < $yes
 ./snell-server < $yes
-debug
 
+debug mv -f snell-server /usr/local/bin/
 mv -f snell-server /usr/local/bin/
 mv -f snell-server.conf /etc/
 mv -f snell.service /lib/systemd/system/
-debug
 
+debug sudo systemctl daemon-reload
 sudo systemctl daemon-reload
 sudo systemctl enable snell.service
 sudo systemctl start snell.service
-debug
+
 
 #clear
+
+debug cat /etc/snell-server.conf
 cat /etc/snell-server.conf
