@@ -31,5 +31,5 @@ sudo systemctl daemon-reload
 sudo systemctl enable snell.service
 sudo systemctl start snell.service
 
-clear
+#clear
 cat /etc/snell-server.conf
