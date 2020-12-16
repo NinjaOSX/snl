@@ -38,22 +38,23 @@ unzip -o -q snell.zip
 #debug rm -f snell.zip
 rm -f snell.zip
 
-# echo "y" > snell.new.config #写入y
-# chmod +x snell-server
-# ./snell-server < snell.new.config 
-# rm -f snell.new.config 
-
 #debug systemctl stop snell.service
 systemctl stop snell.service
 
-#debug chmod +x snell-server
+echo "y" > snell_new.config #写入y
 chmod +x snell-server
+./snell-server < snell_new.config 
+rm -f snell_new.config 
 
-debug yes=“y”
-_yes=“y”
 
-debug "./snell-server < $yes"
-./snell-server --wizard < ${_yes}
+#debug chmod +x snell-server
+#chmod +x snell-server
+
+###debug yes=“y”
+###_yes=“y”
+
+###debug "./snell-server < $yes"
+###./snell-server --wizard < ${_yes}
 
 #debug mv -f snell-server /usr/local/bin/
 mv -f snell-server /usr/local/bin/
