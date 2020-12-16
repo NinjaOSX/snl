@@ -4,6 +4,8 @@ echo "Press any key to continue or Press ctrl+c to exit..."
 read anything
 }
 
+debug
+
 apt install apt-get -y
 debug
 
