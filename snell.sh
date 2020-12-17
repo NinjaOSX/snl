@@ -11,14 +11,14 @@ read anything
 clear
 debug READY!
 
-####apt-get update
+apt-get update
 yum update
 
 #debug apt install apt-get -y
 #apt install apt-get -y
 
 #debug apt-get install wget -y
-####apt-get install wget -y
+apt-get install wget -y
 
 #debug yum install wget -y
 yum install wget -y
@@ -33,7 +33,7 @@ wget --no-check-certificate -O snell.service https://github.com/surge-networks/s
 ####wget --no-check-certificate -O snell.service https://raw.githubusercontent.com/NinjaOSX/snl/main/systemd-example
 
 #debug apt-get install unzip -y
-####apt-get install unzip -y
+apt-get install unzip -y
 
 #debug yum install unzip -y 
 yum install unzip -y 
