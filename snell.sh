@@ -1,3 +1,6 @@
+#!/usr/bin/env bash
+PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
+
 debug()
 {
 echo $*
@@ -47,17 +50,8 @@ rm -f snell.zip
 echo "y" > snell_new.config #写入y
 chmod +x snell-server
 ./snell-server < snell_new.config 
-# rm -f snell_new.config 
+rm -f snell_new.config 
 
-
-#debug chmod +x snell-server
-#chmod +x snell-server
-
-###debug yes=“y”
-###_yes=“y”
-
-###debug "./snell-server < $yes"
-###./snell-server --wizard < ${_yes}
 
 #debug mv -f snell-server /usr/local/bin/
 mv -f snell-server /usr/local/bin/
