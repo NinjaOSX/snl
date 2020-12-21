@@ -11,8 +11,8 @@ read anything
 clear
 debug READY!
 
-apt-get update
-yum update
+#apt-get update
+#yum update
 
 #debug apt install apt-get -y
 #apt install apt-get -y
