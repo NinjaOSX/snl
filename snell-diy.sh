@@ -5,8 +5,8 @@ apt-get update
 yum update
 
 #apt install apt-get -y
-apt-get install wget -y
-yum install wget -y
+#apt-get install wget -y
+#yum install wget -y
 
 wget --no-check-certificate -O snell.zip https://github.com/surge-networks/snell/releases/download/v2.0.3/snell-server-v2.0.3-linux-amd64.zip
 #wget --no-check-certificate -O snell.service https://github.com/surge-networks/snell/raw/master/systemd-example
