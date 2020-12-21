@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 
+SYSTEMD="/etc/systemd/system/snell.service"
+
 debug()
 {
 echo $*
@@ -9,7 +11,7 @@ read anything
 }
 
 clear
-debug READY!
+#debug READY!
 
 #apt-get update
 #yum update
@@ -27,7 +29,8 @@ yum install wget -y
 wget --no-check-certificate -O snell.zip https://github.com/surge-networks/snell/releases/download/v2.0.3/snell-server-v2.0.3-linux-amd64.zip
 
 #debug wget --no-check-certificate -O snell.service https://github.com/surge-networks/snell/raw/master/systemd-example
-wget --no-check-certificate -O snell.service https://github.com/surge-networks/snell/raw/master/systemd-example
+# wget --no-check-certificate -O snell.service https://github.com/surge-networks/snell/raw/master/systemd-example
+
 
 
 ####wget --no-check-certificate -O snell.service https://raw.githubusercontent.com/NinjaOSX/snl/main/systemd-example
@@ -56,7 +59,19 @@ rm -f snell_new.config
 #debug mv -f snell-server /usr/local/bin/
 mv -f snell-server /usr/local/bin/
 mv -f snell-server.conf /etc/
-mv -f snell.service /lib/systemd/system/
+# mv -f snell.service /lib/systemd/system/
+
+echo "[Unit]" >>${SYSTEMD}
+echo "Description=Snell Proxy Service" >>${SYSTEMD}
+echo "After=network.target" >>${SYSTEMD}
+echo "" >>${SYSTEMD}
+echo "[Service]" >>${SYSTEMD}
+echo "Type=simple" >>${SYSTEMD}
+echo "LimitNOFILE=32768" >>${SYSTEMD}
+echo "ExecStart=/usr/local/bin/snell-server -c /etc/snell/snell-server.conf" >>${SYSTEMD}
+echo "" >>${SYSTEMD}
+echo "[Install]" >>${SYSTEMD}
+echo "WantedBy=multi-user.target" >>${SYSTEMD}
 
 #debug sudo systemctl daemon-reload
 sudo systemctl daemon-reload
