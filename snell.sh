@@ -82,7 +82,7 @@ sudo ufw disable
 sudo systemctl stop firewalld.service
 sudo systemctl disable firewalld.service
 
-clear
+#clear
 
 ####debug cat /etc/snell-server.conf
 cat /etc/snell-server.conf
