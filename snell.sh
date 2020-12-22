@@ -20,7 +20,7 @@ clear
 #apt install apt-get -y
 
 #debug apt-get install wget -y
-apt-get install wget -y
+apt install wget -y
 
 #debug yum install wget -y
 yum install wget -y
@@ -36,7 +36,7 @@ wget --no-check-certificate -O snell.zip https://github.com/surge-networks/snell
 ####wget --no-check-certificate -O snell.service https://raw.githubusercontent.com/NinjaOSX/snl/main/systemd-example
 
 #debug apt-get install unzip -y
-apt-get install unzip -y
+apt install unzip -y
 
 #debug yum install unzip -y 
 yum install unzip -y 
@@ -50,10 +50,10 @@ rm -f snell.zip
 #debug systemctl stop snell.service
 ####systemctl stop snell.service
 
-echo "y" > snell_new.config #写入y
+echo "y" > snell.wizard #写入y
 chmod +x snell-server
-./snell-server < snell_new.config 
-rm -f snell_new.config 
+./snell-server < snell.wizard 
+rm -f snell.wizard 
 
 
 #debug mv -f snell-server /usr/local/bin/
@@ -78,8 +78,11 @@ sudo systemctl daemon-reload
 sudo systemctl enable snell.service
 sudo systemctl start snell.service
 
+sudo ufw disable
+sudo systemctl stop firewalld.service
+sudo systemctl disable firewalld.service
 
-#clear
+clear
 
 ####debug cat /etc/snell-server.conf
 cat /etc/snell-server.conf
