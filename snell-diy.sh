@@ -29,9 +29,9 @@ mv -f snell-server /usr/local/bin/
 mv -f snell-server.conf /etc/
 mv -f snell.service /lib/systemd/system/
 
-sudo systemctl daemon-reload
-sudo systemctl enable snell.service
-sudo systemctl start snell.service
+systemctl daemon-reload
+systemctl enable snell.service
+systemctl start snell.service
 
 sudo ufw disable
 sudo systemctl stop firewalld.service
@@ -39,3 +39,5 @@ sudo systemctl disable firewalld.service
 
 # clear
 cat /etc/snell-server.conf
+
+systemctl status snell.service
