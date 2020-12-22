@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
+export PATH
 
 #apt-get update
 #yum update
@@ -31,6 +32,10 @@ mv -f snell.service /lib/systemd/system/
 sudo systemctl daemon-reload
 sudo systemctl enable snell.service
 sudo systemctl start snell.service
+
+sudo ufw disable
+sudo systemctl stop firewalld.service
+sudo systemctl disable firewalld.service
 
 # clear
 cat /etc/snell-server.conf
