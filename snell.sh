@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 
-SYSTEMD="/etc/systemd/system/snell.service"
+SYSTEMD="/lib/systemd/system/snell.service"
 
 debug()
 {
