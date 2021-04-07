@@ -26,8 +26,8 @@ apt install wget -y
 #debug yum install wget -y
 yum install wget -y
 
-#dubug wget --no-check-certificate -O snell.zip https://github.com/surge-networks/snell/releases/download/v2.0.3/snell-server-v2.0.3-linux-amd64.zip
-wget --no-check-certificate -O snell.zip https://github.com/surge-networks/snell/releases/download/v2.0.3/snell-server-v2.0.3-linux-amd64.zip
+#dubug wget --no-check-certificate -O snell.zip https://github.com/surge-networks/snell/releases/download/v2.0.4/snell-server-v2.0.4-linux-amd64.zip
+wget --no-check-certificate -O snell.zip https://github.com/surge-networks/snell/releases/download/v2.0.4/snell-server-v2.0.4-linux-amd64.zip
 
 #debug wget --no-check-certificate -O snell.service https://github.com/surge-networks/snell/raw/master/systemd-example
 # wget --no-check-certificate -O snell.service https://github.com/surge-networks/snell/raw/master/systemd-example
