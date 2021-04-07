@@ -9,7 +9,7 @@ PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 apt-get install wget -y
 yum install wget -y
 
-wget --no-check-certificate -O snell.zip https://github.com/surge-networks/snell/releases/download/v2.0.3/snell-server-v2.0.3-linux-amd64.zip
+wget --no-check-certificate -O snell.zip https://github.com/surge-networks/snell/releases/download/v2.0.4/snell-server-v2.0.4-linux-amd64.zip
 #wget --no-check-certificate -O snell.service https://github.com/surge-networks/snell/raw/master/systemd-example
 
 wget --no-check-certificate -O snell.service https://raw.githubusercontent.com/NinjaOSX/snl/main/systemd-example
