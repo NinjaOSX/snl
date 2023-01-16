@@ -79,9 +79,9 @@ sudo systemctl daemon-reload
 sudo systemctl enable snell.service
 sudo systemctl start snell.service
 
-sudo ufw disable
-sudo systemctl stop firewalld.service
-sudo systemctl disable firewalld.service
+#sudo ufw disable
+#sudo systemctl stop firewalld.service
+#sudo systemctl disable firewalld.service
 
 #clear
 
