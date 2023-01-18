@@ -2,8 +2,9 @@
 #PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 #export PATH
 
-apt-get update
-yum update
+#Update OS
+#apt-get update
+#yum update
 
 #apt install apt-get -y
 apt-get install wget -y
