@@ -38,7 +38,5 @@ systemctl start snell.service
 #sudo systemctl disable firewalld.service
 
 clear
-
-systemctl status snell.service
-
 cat /etc/snell-server.conf
+systemctl status snell.service
