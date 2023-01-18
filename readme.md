@@ -1,1 +1,1 @@
-bash <(curl -s -L https://tinyurl.com/2la9aueo)
+bash <(curl -s -L http://t.cn/A69X5K8M)
