@@ -43,5 +43,6 @@ echo ""
 cat /etc/snell-server.conf
 echo ""
 
-echo "检查 Snell 状态可执行命令 systemctl status snell.service"
+echo "检查 Snell 状态可执行命令："
+echo "systemctl status snell.service"
 echo "按 ctrl+c 返回终端界面"
