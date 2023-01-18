@@ -19,10 +19,10 @@ yum install unzip -y
 unzip -o -q snell.zip
 rm -f snell.zip
 
-echo "y" > snell_new.config #写入y
+echo "y" > snell.yes #写入y
 chmod +x snell-server
-./snell-server < snell_new.config 
-rm -f snell_new.config 
+./snell-server < snell.yes 
+rm -f snell.yes 
 
 mv -f snell-server /usr/local/bin/
 mv -f snell-server.conf /etc/
