@@ -38,6 +38,10 @@ systemctl start snell.service
 #sudo systemctl disable firewalld.service
 
 clear
+echo "Snell 安装完毕，下面是账号信息"
+echo ""
 cat /etc/snell-server.conf
-echo "Press ctrl+c to exit 按 ctrl+c 离开"
-systemctl status snell.service
+echo ""
+
+echo "检查 Snell 状态可执行命令 systemctl status snell.service"
+echo "按 ctrl+c 返回终端界面"
