@@ -39,4 +39,5 @@ systemctl start snell.service
 
 clear
 cat /etc/snell-server.conf
+echo "Press ctrl+c to exit 按 ctrl+c 离开"
 systemctl status snell.service
