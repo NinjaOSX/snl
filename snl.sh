@@ -18,12 +18,12 @@ systemctl enable snell.service
 systemctl start snell.service
 
 clear
-echo "Snell 安装完毕，账号信息如下："
-echo "=========="
+echo "Snell 安装完毕，配置如下："
+echo "====================================="
 cat /etc/snell-server.conf
-echo "=========="
+echo "====================================="
 echo ""
-
 echo "检查 Snell 状态可执行命令："
 echo "systemctl status snell.service"
+echo ""
 echo "按 ctrl+c 返回终端界面"
