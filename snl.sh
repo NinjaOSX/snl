@@ -1,5 +1,5 @@
-curl -s -o -L snell.zip https://dl.nssurge.com/snell/snell-server-v4.0.0-linux-amd64.zip
-curl -s -o -L snell.service https://raw.githubusercontent.com/NinjaOSX/snl/main/systemd-example
+curl -s -o snell.zip -L https://dl.nssurge.com/snell/snell-server-v4.0.0-linux-amd64.zip
+curl -s -o snell.service -L https://raw.githubusercontent.com/NinjaOSX/snl/main/systemd-example
 
 tar -xf snell.zip
 rm -f snell.zip
