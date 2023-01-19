@@ -1,6 +1,6 @@
 #Snell
 
-bash <(curl -s -L https://tinyurl.com/2la9aueo)
+bash <(curl -s -L https://tinyurl.com/2gj5ucnd)
 
 #BBR
 
