@@ -1,8 +1,8 @@
-curl -s -o -L snell.tar https://github.com/NinjaOSX/snl/releases/download/V4.0.0/snell-server-v4.0.0-linux-amd64.tar
+curl -s -o -L snell.zip https://dl.nssurge.com/snell/snell-server-v4.0.0-linux-amd64.zip
 curl -s -o -L snell.service https://raw.githubusercontent.com/NinjaOSX/snl/main/systemd-example
 
-tar -xf snell.tar
-rm -f snell.tar
+tar -xf snell.zip
+rm -f snell.zip
 
 echo "y" > snell.yes #写入y
 chmod +x snell-server
