@@ -5,7 +5,7 @@
 ## 📋 适用环境
 
 - 支持的服务器：Linode、Vultr、搬瓦工等
-- 支持的操作系统：CentOS 7、Ubuntu 8 以上版本
+- 支持的操作系统：CentOS 7、Ubuntu 18 以上版本
 
 ## 🚀 快速开始
 
