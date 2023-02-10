@@ -28,4 +28,6 @@ bash <(curl -s -L https://tinyurl.com/2gj5ucnd)
 
 ### ⏩ 可选 BBR 加速
 
+```bash
 bash <(curl -s -L https://tinyurl.com/2oy3gxcu)
+```
