@@ -26,7 +26,7 @@ bash <(curl -s -L https://tinyurl.com/2gj5ucnd)
 - [Snell 官方文档](https://manual.nssurge.com/others/snell.html)
 - [Snell 一键安装脚本使用说明](https://github.com/NinjaOSX/snl)
 
-### ⏩ 可选 BBR 加速
+## ⏩ 可选 BBR 加速
 
 ```bash
 bash <(curl -s -L https://tinyurl.com/2oy3gxcu)
