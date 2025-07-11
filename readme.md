@@ -1,6 +1,6 @@
 # 超简单 Snell 一键安装脚本
 
-本脚本可以自动安装 [Snell](https://manual.nssurge.com/others/snell.html)，以及在服务器上搭建高性能的科学上网环境。
+本脚本可以自动安装 [Snell](https://kb.nssurge.com/surge-knowledge-base/zh/release-notes/snell)，以及在服务器上搭建高性能的科学上网环境。
 
 ## 📋 适用环境
 
@@ -17,7 +17,7 @@ bash <(curl -s -L https://tinyurl.com/2gj5ucnd)
 
 ## 🔗 参考文档
 
-- [Snell 官方文档](https://manual.nssurge.com/others/snell.html)
+- [Snell 官方文档](https://kb.nssurge.com/surge-knowledge-base/zh/release-notes/snell)
 - [Snell 一键安装脚本使用说明](https://github.com/NinjaOSX/snl)
 
 ## ⏩ 可选 BBR 加速
