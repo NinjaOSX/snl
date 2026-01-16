@@ -1,4 +1,4 @@
-curl -s -o snell.zip -L https://dl.nssurge.com/snell/snell-server-v4.0.0-linux-amd64.zip
+curl -s -o snell.zip -L https://dl.nssurge.com/snell/snell-server-v5.0.1-linux-amd64.zip
 curl -s -o snell.service -L https://raw.githubusercontent.com/NinjaOSX/snl/main/systemd-example
 
 apt-get install unzip -y
