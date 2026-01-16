@@ -10,7 +10,7 @@
 apt-get install wget -y
 yum install wget -y
 
-wget --no-check-certificate -O snell.zip https://dl.nssurge.com/snell/snell-server-v4.1.1-linux-amd64.zip
+wget --no-check-certificate -O snell.zip https://dl.nssurge.com/snell/snell-server-v5.0.1-linux-amd64.zip
 wget --no-check-certificate -O snell.service https://raw.githubusercontent.com/NinjaOSX/snl/main/systemd-example
 
 apt-get install unzip -y
